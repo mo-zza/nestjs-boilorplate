@@ -13,8 +13,8 @@ import { NftNameMoudle } from '@nftName/nftName.module';
         NftNameMoudle,
         TypeOrmModule.forRootAsync({
             imports: [ConfigModule.forFeature(TypeOrmModuleConfig)],
-            useClass: TypeOrmConfigService
-        })
+            useClass: TypeOrmConfigService,
+        }),
     ],
     providers: [
         {

@@ -12,8 +12,7 @@ export default registerAs(
         database: process.env.PG_DB_NAME || '',
         synchronize: process.env.PG_SYNC === 'true',
         entities: [
-            __dirname +
-                '/../../nftName/domain/models/**/*.entity{.ts,.js}',
+            __dirname + '/../../nftName/domain/models/**/*.entity{.ts,.js}',
         ],
         migrations: [__dirname + '/../../generated/migrations/**/*{.ts,.js}'],
         cli: {
